@@ -16,6 +16,8 @@
     background-color: rgb(220, 238, 209);
     border-radius: 10px 10px 0px 0px;
     text-align: center;
+    border: 1px rgb(142, 155, 135) solid;
+    filter: drop-shadow(0px 10px 10px rgb(142, 155, 135));
 }
 #navbar button {
     margin-bottom: 10px;
@@ -49,8 +51,7 @@ p {
 }
 .container {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 40% 60%;
 }
 .boxkind1 {
     background-color: rgb(220, 238, 209);
@@ -59,15 +60,18 @@ p {
     margin: 5px;
 }
 .headerbox {
-    grid-column-start: 0%;
-    grid-column-end: 40%;
-}
-.infobox {
-    grid-column-start: 40%;
-    grid-column-end: 100%;
+    font-size: 30px;
+    text-align: center;
+    align-content: center;
 }
 @media (max-width: 800px){
-    
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .infobox {
+        font-size: 150%;
+    }
 }
 /*
 rgb(220, 238, 209): Light green
